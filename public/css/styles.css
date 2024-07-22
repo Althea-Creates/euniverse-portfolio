@@ -1,43 +1,24 @@
 body {
-    background-color: #80A3FF;
-    position: relative;
-    overflow-x: hidden; 
-    font-family: "DM Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 100;
-    font-style: normal;
-    max-width: auto;
-  }
-  
-  .bg-image-universe {
-    position: fixed; 
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-    opacity: 0.7;
-  }
-  
-  .bg-image-stars {
-    position: fixed; 
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -2;
-  }
-  
+  background-color: #006989;
+  background-repeat: no-repeat;
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  max-width: auto;
+
+}
+/* HEADER NAVBAR */
   .bgHeader {
     background-color: rgba(128, 164, 255, 0);
+    padding: 2%;
   }
   
   .navbar {
     z-index: 1000; 
     padding-left: 5%;
     padding-right: 5%;
+    font-size: larger;
   }
   
   .navbar-nav .nav-link {
@@ -49,9 +30,10 @@ body {
   }
   
   .navbar-nav .nav-link:hover {
-    color: #FFE16E !important;
+    color: #a3bac3 !important;
   }
   
+  /* INDEX HOMEPAGE */
   .container {
     margin-top: 5%;
     color: white;
@@ -62,16 +44,37 @@ body {
   }
   
   h1 {
-    font-size:6vh;
+    font-size:18vh;
     line-height: 1;
-    letter-spacing: 3vh; 
+    letter-spacing: 10vh; 
   }
   
   p {
-    margin-top: 2%;
+    margin-top: 5%;
+    margin-left: 50%;
+    padding-left: 4%;
     font-size: 3vh;
     font-weight: 500;
+    text-align: left;
   }
+  a {
+    margin-top: 5%;
+    margin-left: 30%;
+    font-size: 5vh;
+    font-weight: 500;
+    text-align: left;
+    text-decoration: none;
+    color: #a3bac3;
+  }
+  .image-logo {
+    width: 10%;
+    height: auto;
+    margin-right: 100%;
+  }
+  .caption-text {
+    align-items: left;
+    font-weight: 200;
+}
   /* Button styles */
   button {
     background-color: #FFE16E;
@@ -93,7 +96,7 @@ body {
   }
   /* footer */
   .footerclass {
-    background-color: #FFE16E;
+    background-color: #01a7c2;
     padding: 5%;
     padding-bottom: 0; 
     font-weight: bold;

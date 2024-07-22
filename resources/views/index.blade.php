@@ -18,22 +18,32 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
 </head>
-<body>
+<body style="background-image: url('asset/landing-1.png')">
     <!-- Background Images -->
-    <img src="asset/universe.png" class="bg-image-universe img-fluid" alt="bg gif">
-    <img src="asset/stars.gif" class="bg-image-stars img-fluid" alt="bg gif">
+    {{-- <img src="asset/universe.png" class="bg-image-universe img-fluid" alt="bg gif">
+    <img src="asset/stars.gif" class="bg-image-stars img-fluid" alt="bg gif"> --}}
+    {{-- <img src="asset/landing 1.png" class="bg-image-landing img-fluid" alt="background image"> --}}
 
     @include('partials.header')
 
     <!-- Content Section -->
     <div class="container">
         <h1>EUNIVERSE</h1>
-        <p>Meet Eunice, a communications student on a cosmic journey of<br> storytelling. 
-            Through scriptwriting, directing, and editing, she <br>brings stories to life, 
-            capturing the essence of human <br>experience in the vast expanse of space. </p>
-        <button onclick="window.location.href='/about'">Get to know me!</button>
+        
+            <div class="col-md-12">
+                <p>Meet Eunice, a communications student on a cosmic journey of storytelling. 
+                    Through scriptwriting, directing, and editing, she brings stories to life, 
+                    capturing the essence of human experience in the vast expanse of space. </p>
+                    <a href="/about"><u>Get to know me</u></a>
+            </div>
+            <div class="d-flex align-items-center caption-logo">
+                <img src="asset/euniverselogo5.png" class="image-logo rounded-circle me-0" alt="logo">
+                <div class="caption-text ms-2">
+                    <caption>designed & created by ayet</caption>
+                </div>
+            </div>            
     </div>
-    
+
     @include('partials.footer')
     
 </body>
