@@ -24,14 +24,14 @@
     <div class="card-container">
         <div class="row">
             <div class="col">
-              <img src="asset/earthdp.jpeg" alt="profile" class="profile-image rounded">
+              <img src="asset/ss.png" alt="profile" class="profile-image rounded">
             </div>
             <div class="col-md-8">
                 <img src="asset/banner.png" alt="banner name" class="banner-image">
                 <div class="card-body">
                   {{-- <h5 class="card-title">Card title</h5> --}}
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  <p class="card-text">what is eunice hahahahahahah text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-muted">birthday nya siguro to</small></p>
                 </div>
               </div>
           </div>
