@@ -12,7 +12,7 @@
     <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     
-    <link rel="icon" href="{{ asset('euniverse-logo.ico') }}" type="image/x-icon">
+    <link rel="icon" href="{{ asset('euniverselogo.ico') }}" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,24 +27,29 @@
     @include('partials.header')
 
     <!-- Content Section -->
-    <div class="container">
-        <h1>EUNIVERSE</h1>
-        
-            <div class="col-md-12">
-                <p>Meet Eunice, a communications student on a cosmic journey of storytelling. 
-                    Through scriptwriting, directing, and editing, she brings stories to life, 
-                    capturing the essence of human experience in the vast expanse of space. </p>
-                    <a href="/about"><u>Get to know me</u></a>
+    <div class="container text-center text-white my-5">
+        <h1 class="display-1">EUNIVERSE</h1>
+        <div class="row mt-4">
+            <div class="col-lg-12 col-md-12 col-sm-12 mx-auto">
+                <p>A Communication-student with proven leadership capabilities and creative skills 
+                    shared through writing. A person who would persevere in sharing creative vision 
+                    through available mediums, and openness to learning new skills in various pursuits.</p>
+                <a href="/about" class="btn-link text-decoration-underline">Get to know me</a>
             </div>
-            <div class="d-flex align-items-center caption-logo">
-                <img src="asset/euniverselogo5.png" class="image-logo rounded-circle me-0" alt="logo">
-                <div class="caption-text ms-2">
-                    <caption>designed & created by ayet</caption>
-                </div>
-            </div>            
+        </div>
+        <div class="d-flex justify-content-left align-items-center mx-5">
+            <img src="asset/euniverselogo5.png" id="linkable-logo" class="image-logo rounded-circle" alt="logo">
+            <div class="caption-text ms-2">
+                <caption><i>designed & created by ayet</i></caption>
+            </div>
+        </div>
     </div>
 
     @include('partials.footer')
-    
+    <script>
+        document.getElementById('linkable-logo').addEventListener('click', function() {
+            window.location.href = '/';
+        });
+    </script>
 </body>
 </html>
