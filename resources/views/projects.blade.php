@@ -38,9 +38,9 @@
 
                 <div class="galler-filters" align="center">
                     <button class="filter-button" data-filter="all">All</button>
-                    <button class="filter-button" data-filter="category1">Designing</button>
-                    <button class="filter-button" data-filter="category2">Development</button>
-                    <button class="filter-button" data-filter="category3">Graphics</button>
+                    <button class="filter-button" data-filter="category1">Digital</button>
+                    <button class="filter-button" data-filter="category2">Photos</button>
+                    <button class="filter-button" data-filter="category3">Videos</button>
                 </div>
                 
                 <br/>

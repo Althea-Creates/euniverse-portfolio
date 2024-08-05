@@ -93,6 +93,13 @@
                           <li>Collaboration</li>
                         </ul>
                     </div>
+                    <div class="col-md-6">
+                      <ul class="list-unstyled">
+                          <li>Adaptability</li>
+                          <li>Critical Thinking</li>
+                          <li>Work Ethic</li>
+                      </ul>
+                    </div>
                   </div>
                 </p>
               </div>
@@ -125,7 +132,7 @@
 
               </div>
               <div class="timeline__event__date">
-                August 2021
+                Aug 2021 - May 2022
               </div>
               <div class="timeline__event__content">
                 <div class="timeline__event__title">

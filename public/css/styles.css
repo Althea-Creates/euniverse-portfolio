@@ -183,23 +183,36 @@ a{
 
   .bg-about-card{
     color: #eaebed;
-    background-color: #007090;
+    background-color: #01a7c2;
     font-family: sans-serif;
+    margin: 5%;
   }
 
   /* WRITINGS PAGE */
   .writings-container{
     margin-bottom: 0%;
     padding: 0%;
+    font-size:10vh;
+    font-weight: bold;
+    font-family: sans-serif;
+    letter-spacing: 3vh; 
+  }
+  .list{
+    padding-left: 10%;
+    padding-right: 10%;
   }
   .list-group{
-    padding: 10%;
+    padding: 0%;
     margin: 0%;
   }
   .list-group-item{
-    background-color: #FFE16E;
+    background-color: #01a7c2;
   }
-  
+  .image-writing{
+    max-width: 50%;
+    height: auto;
+    padding: 2%;
+  }
   /* PROJECTS PAGE */
   *{
       padding:0;
