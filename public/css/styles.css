@@ -193,9 +193,9 @@ a{
     margin-bottom: 0%;
     padding: 0%;
     font-size:10vh;
-    font-weight: bold;
+    /* font-weight: bold, italic; */
     font-family: sans-serif;
-    letter-spacing: 3vh; 
+    /* letter-spacing: 3vh;  */
   }
   .list{
     padding-left: 10%;
@@ -213,6 +213,21 @@ a{
     height: auto;
     padding: 2%;
   }
+  .image-caption:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+  }
+  .caption-container{
+    margin-bottom: 15%;
+  }
+  .caption-desc{
+    font-weight: italic;
+    font-size: 3vh;
+  }
+  .white-shadow {
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.5) !important;
+  }
+
   /* PROJECTS PAGE */
   *{
       padding:0;
@@ -222,16 +237,15 @@ a{
   /*	general	*/
   
   section{
-      padding: 50px 0;
+      padding: 0 0 5% 0;
   }
   
   /*	gallery */
   
   .gallery-title{
-      font-size: 36px;
+      font-size: 10vh;
       color: white;
-      text-align: center;
-      font-weight: 500;
+      font-family: sans-serif;
   }
   .gallery-filters{
     color: white;
@@ -249,14 +263,27 @@ a{
   .filter-button:focus,
   .filter-button.active{
       color: black;
-      background-color:#FFE16E;
+      background-color:#01a7c2;
       outline:none;
   }
   .gallery_product{
       margin: 0px;
       padding:0;
       position:relative;
+      overflow: hidden;
   }
+  .gallery_product img {
+    width: 100%; 
+    height: 200px;
+    display: block;
+    object-fit: cover;
+  }
+   .gallery_product video {
+    width: 100%; 
+    height: auto;
+    display: block; 
+  } 
+
   .gallery_product .img-info{
       position: absolute;
       background: rgba(0,0,0,0.5);
@@ -277,5 +304,6 @@ a{
      -webkit-transition: 2s;
       transition: 2s;
   }
+
   
   /*	end gallery */

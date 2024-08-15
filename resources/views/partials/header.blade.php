@@ -21,7 +21,8 @@
                     <a class="nav-link {{ Request::is('writings') ? 'active' : '' }}" href="/writings">Writings</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ Request::is('projects') ? 'active' : '' }}" href="/projects">Projects</a>
+                    {{-- <a class="nav-link {{ Request::is('projects') ? 'active' : '' }}" href="/projects">Projects</a> --}}
+                    <a class="nav-link disabled" tabindex="-1" aria-disabled="true">Projects</a>
                 </li>
             </ul>
         </div>

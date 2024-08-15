@@ -98,27 +98,53 @@
     <div class="writings-container text-center text-white">
       <span class="mt-5">Caption Writings</span>
     </div>
-    {{-- row 1 --}}
-    <div class="container">
-      <div class="row row-cols-4">
-        <div class="col">
-          <img src="{{ asset('asset/writings/blog.jpg') }}" class="img-fluid" alt="writing img"/>
-        </div>
-        <div class="col">
-          <img src="{{ asset('asset/writings/blog.jpg') }}" class="img-fluid" alt="writing img"/>
-        </div>
-        <div class="col">
-          <img src="{{ asset('asset/writings/blog.jpg') }}" class="img-fluid" alt="writing img"/>
-        </div>
-        <div class="col">
-          <img src="{{ asset('asset/writings/blog.jpg') }}" class="img-fluid" alt="writing img"/>
-        </div>
-      </div>
-      <p class="text-center ms-0">
-        Writing captions for posts disseminated on social media platforms     
-      </p>
+    <div class="text-center text-white">
+      <span class="caption-desc mt-5"> Writing captions for posts disseminated on social media platforms </span>
     </div>
 
+    <div class="container caption-container">
+      {{-- row 1 --}}
+      <div class="row row-cols-3">
+        <div class="col">
+          <img src="{{ asset('asset/writings/CAPTION3.png') }}" class="image-caption img-fluid rounded white-shadow" alt="writing img" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('{{ asset('asset/writings/CAPTION3.png') }}')"/>
+        </div>
+        <div class="col">
+          <img src="{{ asset('asset/writings/CAPTION 4.png') }}" class="image-caption img-fluid rounded white-shadow" alt="writing img" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('{{ asset('asset/writings/CAPTION 4.png') }}')"/>
+        </div>
+        <div class="col">
+          <img src="{{ asset('asset/writings/CAPTION 5.png') }}" class="image-caption img-fluid rounded white-shadow" alt="writing img" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('{{ asset('asset/writings/CAPTION 5.png') }}')"/>
+        </div>
+      </div>
+    
+      {{-- row 2 --}}
+      <div class="row row-cols-3 my-5">
+        <div class="col">
+          <img src="{{ asset('asset/writings/CAPTION.png') }}" class="image-caption img-fluid rounded white-shadow" alt="writing img" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('{{ asset('asset/writings/CAPTION.png') }}')"/>
+        </div>
+        <div class="col">
+          <img src="{{ asset('asset/writings/CAPTION 2.png') }}" class="image-caption img-fluid rounded white-shadow" alt="writing img" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('{{ asset('asset/writings/CAPTION 2.png') }}')"/>
+        </div>
+        <div class="col"> </div>
+      </div>
+    </div>
+    
+    <!-- Bootstrap Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-body">
+            <img id="modalImage" src="" class="img-fluid" alt="Enlarged image"/>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script>
+    function showImage(src) {
+        document.getElementById('modalImage').src = src;
+    }
+    </script>
+    
     @include('partials.footer')
 </body>
 </html>
