@@ -12,7 +12,7 @@
     <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     
-    <link rel="icon" href="{{ asset('euniverse-logo.ico') }}" type="image/x-icon">
+    <link rel="icon" href="{{ asset('euniverse-logo-5.ico') }}" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,7 +28,7 @@
 
     <!-- Content Section -->
     <div class="container text-center text-white my-5">
-        <h1 class="display-1">EUNIVERSE</h1>
+        <h1 class="display-1 text-shadow ms-0">EUNIVERSE</h1>
         <div class="row mt-4">
             <div class="col-lg-12 col-md-12 col-sm-12 mx-auto">
                 <p>A Communication-student with proven leadership capabilities and creative skills 

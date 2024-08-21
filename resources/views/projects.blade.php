@@ -12,7 +12,7 @@
     <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     
-    <link rel="icon" href="{{ asset('euniverselogo.ico') }}" type="image/x-icon">
+    <link rel="icon" href="{{ asset('euniverse-logo-5.ico') }}" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,10 +37,10 @@
                 </div>
 
                 <div class="galler-filters" align="center">
-                    <button class="filter-button" data-filter="all">All</button>
-                    <button class="filter-button" data-filter="category1">Digital</button>
-                    <button class="filter-button" data-filter="category2">Photos</button>
-                    <button class="filter-button" data-filter="category3">Videos</button>
+                    <button class="filter-button rounded" data-filter="all">All</button>
+                    <button class="filter-button rounded" data-filter="category1">Digital</button>
+                    <button class="filter-button rounded" data-filter="category2">Photos</button>
+                    {{-- <button class="filter-button" data-filter="category3">Videos</button> --}}
                 </div>
                 
                 <br/>
@@ -65,7 +65,7 @@
                     </a>
                 </div>
 
-                <div class="gallery_product col-sm-3 col-xs-6 filter category3">
+                {{-- <div class="gallery_product col-sm-3 col-xs-6 filter category3">
                     <a class="fancybox" rel="ligthbox" href="https://picsum.photos/400/250?image=626">
                         <img class="img-responsive" alt="" src="https://picsum.photos/400/250?image=626" />
                         <div class='img-info'>
@@ -73,7 +73,7 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                     </a>
-                </div>
+                </div> --}}
 
                 <div class="gallery_product col-sm-3 col-xs-6 filter category1">
                     <a class="fancybox" rel="ligthbox" href="{{ asset('asset/digital/EVERy Good Things ICON new.jpg') }}">
@@ -95,7 +95,7 @@
                     </a>
                 </div>
 
-                <div class="gallery_product col-sm-3 col-xs-6 filter category3">
+                {{-- <div class="gallery_product col-sm-3 col-xs-6 filter category3">
                     <a class="fancybox" rel="ligthbox" href="https://picsum.photos/400/250?image=846">
                         <img class="img-responsive" alt="" src="https://picsum.photos/400/250?image=846" />
                         <div class='img-info'>
@@ -103,7 +103,7 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                     </a>
-                </div>
+                </div> --}}
 
                 <div class="gallery_product col-sm-3 col-xs-6 filter category1">
                     <a class="fancybox" rel="ligthbox" href="{{ asset('asset/digital/EVERY Good Things Banner FINAL NA FINAL.jpg') }}">
@@ -116,8 +116,8 @@
                 </div>
 
                 <div class="gallery_product col-sm-3 col-xs-6 filter category2">
-                    <a class="fancybox" rel="ligthbox" href="{{ asset('asset/photos/sample 7.jpg') }}">
-                        <img class="img-responsive" alt="" src="{{ asset('asset/photos/sample 7.jpg') }}6" />
+                    <a class="fancybox" rel="ligthbox" href="{{ asset('asset/photos/sample7.jpg') }}">
+                        <img class="img-responsive" alt="" src="{{ asset('asset/photos/sample7.jpg') }}" />
                         <div class='img-info'>
                             <h4>Image Title 8</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -125,7 +125,7 @@
                     </a>
                 </div>
 
-                <div class="gallery_product col-sm-3 col-xs-6 filter category3">
+                {{-- <div class="gallery_product col-sm-3 col-xs-6 filter category3">
                     <a class="fancybox" rel="ligthbox" href="https://picsum.photos/400/250?image=1026">
                         <img class="img-responsive" alt="" src="https://picsum.photos/400/250?image=1026" />
                         <div class='img-info'>
@@ -133,9 +133,9 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                     </a>
-                </div>
+                </div> --}}
 
-                <div class="gallery_product col-sm-3 col-xs-6 filter category1">
+                {{-- <div class="gallery_product col-sm-3 col-xs-6 filter category1">
                     <a class="fancybox" rel="ligthbox" href="https://picsum.photos/400/250?image=102">
                         <img class="img-responsive" alt="" src="https://picsum.photos/400/250?image=102" />
                         <div class='img-info'>
@@ -143,7 +143,7 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                     </a>
-                </div>
+                </div> --}}
 
                 <div class="gallery_product col-sm-3 col-xs-6 filter category2">
                     <a class="fancybox" rel="ligthbox" href="{{ asset('asset/photos/sample 8.jpg') }}">
@@ -155,7 +155,7 @@
                     </a>
                 </div>
 
-                <div class="gallery_product col-sm-3 col-xs-6 filter category3">
+                {{-- <div class="gallery_product col-sm-3 col-xs-6 filter category3">
                     <a class="fancybox" rel="ligthbox" href="https://picsum.photos/400/250?image=106">
                         <img class="img-responsive" alt="" src="https://picsum.photos/400/250?image=106" />
                         <div class='img-info'>
@@ -163,7 +163,7 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                     </a>
-                </div>
+                </div> --}}
 
                 <div class="gallery_product col-sm-3 col-xs-6 filter category1">
                     <a class="fancybox" rel="ligthbox" href="{{ asset('asset/digital/FINAL COVER.png') }}">

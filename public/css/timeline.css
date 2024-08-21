@@ -2,17 +2,17 @@
   box-sizing: border-box;
 }
 
-html {
+/* html {
   font-size: 14px;
-}
+} */
 
-body {
+/* body {
   font-family: "Open Sans", sans-serif;
   color: #525f7f;
-}
+} */
 
 h2 {
-  margin: 2%;
+  margin: 5%;
   padding: 0%;
   text-align: center;
   font-size: 2rem;
@@ -32,7 +32,7 @@ h2 {
   margin: 20px 0;
   border-radius: 6px;
   align-self: center;
-  width: 50vw;
+  width: 52vw;
 }
 .timeline__event:nth-child(2n+1) {
   flex-direction: row-reverse;

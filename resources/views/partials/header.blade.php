@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bgHeader">
     <div class="container-fluid">
         <!-- Logo -->
-        <a class="navbar-brand {{ Request::is('/') ? 'd-none' : '' }}" href="/">
+        <a class="navbar-brand href="/">
             <img src="asset/euniverselogo5.png" alt="Logo" width="100" height="auto" class="d-inline-block align-top">
         </a>        
         <!-- Toggler/collapsible Button -->
@@ -21,8 +21,8 @@
                     <a class="nav-link {{ Request::is('writings') ? 'active' : '' }}" href="/writings">Writings</a>
                 </li>
                 <li class="nav-item">
-                    {{-- <a class="nav-link {{ Request::is('projects') ? 'active' : '' }}" href="/projects">Projects</a> --}}
-                    <a class="nav-link disabled" tabindex="-1" aria-disabled="true">Projects</a>
+                    <a class="nav-link {{ Request::is('projects') ? 'active' : '' }}" href="/projects">Projects</a>
+                    {{-- <a class="nav-link disabled" tabindex="-1" aria-disabled="true">Projects</a> --}}
                 </li>
             </ul>
         </div>

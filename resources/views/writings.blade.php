@@ -12,7 +12,7 @@
     <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     
-    <link rel="icon" href="{{ asset('euniverselogo.ico') }}" type="image/x-icon">
+    <link rel="icon" href="{{ asset('euniverse-logo-5.ico') }}" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -102,49 +102,31 @@
       <span class="caption-desc mt-5"> Writing captions for posts disseminated on social media platforms </span>
     </div>
 
-    <div class="container caption-container">
-      {{-- row 1 --}}
-      <div class="row row-cols-3">
-        <div class="col">
-          <img src="{{ asset('asset/writings/CAPTION3.png') }}" class="image-caption img-fluid rounded white-shadow" alt="writing img" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('{{ asset('asset/writings/CAPTION3.png') }}')"/>
-        </div>
-        <div class="col">
-          <img src="{{ asset('asset/writings/CAPTION 4.png') }}" class="image-caption img-fluid rounded white-shadow" alt="writing img" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('{{ asset('asset/writings/CAPTION 4.png') }}')"/>
-        </div>
-        <div class="col">
-          <img src="{{ asset('asset/writings/CAPTION 5.png') }}" class="image-caption img-fluid rounded white-shadow" alt="writing img" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('{{ asset('asset/writings/CAPTION 5.png') }}')"/>
-        </div>
+    <div class="body-carousel">
+      <div class="image-container">
+        <span style="--i: 1">
+            <img src="{{ asset('asset/writings/CAPTION3.png') }}">
+        </span>
+        <span style="--i: 2">
+            <img src="{{ asset('asset/writings/CAPTION 4.png') }}">
+        </span>
+        <span style="--i: 3">
+            <img src="{{ asset('asset/writings/CAPTION 5.png') }}">  
+        </span>
+        <span style="--i: 4">
+            <img src="{{ asset('asset/writings/CAPTION.png') }}">
+        </span>
+        <span style="--i: 4">
+          <img src="{{ asset('asset/writings/CAPTION 2.png') }}">
+        </span>
       </div>
-    
-      {{-- row 2 --}}
-      <div class="row row-cols-3 my-5">
-        <div class="col">
-          <img src="{{ asset('asset/writings/CAPTION.png') }}" class="image-caption img-fluid rounded white-shadow" alt="writing img" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('{{ asset('asset/writings/CAPTION.png') }}')"/>
-        </div>
-        <div class="col">
-          <img src="{{ asset('asset/writings/CAPTION 2.png') }}" class="image-caption img-fluid rounded white-shadow" alt="writing img" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('{{ asset('asset/writings/CAPTION 2.png') }}')"/>
-        </div>
-        <div class="col"> </div>
+      <div class="btn-container">
+        <button class="btn" id="prev"><i class="fa-solid fa-rotate-left"></i></button>
+        <button class="btn" id="next"><i class="fa-solid fa-rotate-right"></i></button>
       </div>
     </div>
     
-    <!-- Bootstrap Modal -->
-    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content">
-          <div class="modal-body">
-            <img id="modalImage" src="" class="img-fluid" alt="Enlarged image"/>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <script>
-    function showImage(src) {
-        document.getElementById('modalImage').src = src;
-    }
-    </script>
-    
+    <script src="asset/js/js.js"></script>
     @include('partials.footer')
 </body>
 </html>
