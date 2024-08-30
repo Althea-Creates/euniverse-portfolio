@@ -18,7 +18,7 @@
     <link rel="icon" href="{{ asset('euniverse-logo-5.ico') }}" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/timeline.css">
-    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/about.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
@@ -53,13 +53,14 @@
                 </div>
             </div>
         </div> {{--end of first row--}}
-        <div class="row"> {{-- Combined row --}}
-          {{-- hardskills --}}
-          <div class="col-md-4"> {{-- Left side: About cards --}}
+
+        <div class="row"> {{-- 2nd row --}}
+          <div class="col-md-4 mt-4 mb-1"> {{-- Left side: About cards - hardskills --}}
+            <h2 class="text-shadow">About</h2>
             <div class="card shadow bg-about-card my-5 mx-0" style="max-width: 50rem;">
               <div class="card-body">
                 <h5 class="card-title fw-bold"><i class="bi bi-gear-fill me-2"></i>Hard Skills</h5>
-                <p class="card-text ms-0"> {{-- Content of card --}}
+                <p class="card-text ms-0 fs-5"> {{-- Content of card --}}
                   <div class="row ms-0">
                     <div class="col-md-6">
                       <ul class="list-unstyled">
@@ -79,8 +80,7 @@
                 </p>
               </div>
             </div>
-            {{-- softskills --}}
-            <div class="card shadow bg-about-card my-2 mx-0" style="max-width: 50rem;">
+            <div class="card shadow bg-about-card my-2 mx-0" style="max-width: 50rem;"> {{--soft skills--}}
               <div class="card-body">
                 <h5 class="card-title fw-bold"><i class="bi bi-person-circle me-2"></i>Soft Skills</h5>
                 <p class="card-text ms-0"> {{-- Content of card --}}
@@ -103,27 +103,9 @@
                 </p>
               </div>
             </div>
-            <!-- Constellation Animation Container -->
-            <div class="constellation-container">
-              <div class="constellation my-5">
-                 <!-- Stars -->
-                <div class="star star-1"></div>
-                <div class="star star-2"></div>
-                <div class="star star-3"></div>
-                <div class="star star-4"></div>
-                <!-- Shooting Stars -->
-                <div class="shooting-star shooting-star-1"></div>
-                <div class="shooting-star shooting-star-2"></div>
-                <div class="shooting-star shooting-star-3"></div>
-                <!-- Lines connecting stars -->
-                <div class="line line-1"></div>
-                <div class="line line-2"></div>
-                <div class="line line-3"></div>
-              </div>
-            </div>
           </div> {{-- End of Left side: About cards --}}
           <div class="col-md-8 education-container"> {{-- Right side: Education --}}
-            <h2>Education</h2>
+            <h2 class="text-shadow">Education</h2>
               <div class="timeline"> 
                 <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type1">
                   <div class="timeline__event__icon ">

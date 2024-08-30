@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="css/header.css">
 <nav class="navbar navbar-expand-lg navbar-light bgHeader">
     <div class="container-fluid">
         <!-- Logo -->

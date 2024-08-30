@@ -28,7 +28,7 @@
 
     <!-- Content Section -->
     <div class="container text-center text-white my-5">
-        <h1 class="display-1 text-shadow ms-0">EUNIVERSE</h1>
+        <span class="display-1 text-shadow ms-0">EUNIVERSE</span>
         <div class="row mt-4">
             <div class="col-lg-12 col-md-12 col-sm-12 mx-auto">
                 <p>A Communication-student with proven leadership capabilities and creative skills 

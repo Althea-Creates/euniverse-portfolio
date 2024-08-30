@@ -14,6 +14,7 @@
     
     <link rel="icon" href="{{ asset('euniverse-logo-5.ico') }}" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/gallery.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
@@ -32,11 +33,11 @@
         <div class="container-fluid" style="padding: 0%;">
             <div class="row" style="padding: 0%; margin:0%;">
 
-                <div class="gallery text-center mb-5 mt-0 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <span class="gallery-title">Gallery</span>
+                <div class="gallery text-center mt-0 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h1 class="text-white">GALLERY</h1>
                 </div>
 
-                <div class="galler-filters" align="center">
+                <div class="galler-filters mb-4" align="center">
                     <button class="filter-button rounded" data-filter="all">All</button>
                     <button class="filter-button rounded" data-filter="category1">Digital</button>
                     <button class="filter-button rounded" data-filter="category2">Photos</button>
@@ -198,6 +199,16 @@
                 <div class="gallery_product col-sm-3 col-xs-6 filter category1">
                     <a class="fancybox" rel="ligthbox" href="{{ asset('asset/digital/podcast cover.png') }}">
                         <img class="img-responsive" alt="" src="{{ asset('asset/digital/podcast cover.png') }}" />
+                        <div class='img-info'>
+                            <h4>Image Title 10</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="gallery_product col-sm-3 col-xs-6 filter category">
+                    <a class="fancybox" rel="ligthbox" href="https://imgs.search.brave.com/vV_L7OoBnmJLzqQNMqa7eAbOlhJc45sJzzTvPkLOowk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA2LzIyLzQxLzQx/LzM2MF9GXzYyMjQx/NDEzOV9zV2VvRWJF/VFNOSW9xZUV1cVNa/b042ckJXc213Z3dK/Ni5qcGc">
+                        <img class="img-responsive" alt="" src="https://imgs.search.brave.com/vV_L7OoBnmJLzqQNMqa7eAbOlhJc45sJzzTvPkLOowk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA2LzIyLzQxLzQx/LzM2MF9GXzYyMjQx/NDEzOV9zV2VvRWJF/VFNOSW9xZUV1cVNa/b042ckJXc213Z3dK/Ni5qcGc" />
                         <div class='img-info'>
                             <h4>Image Title 10</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
