@@ -35,8 +35,7 @@
                 <ul>
                   <li>Video Editing</li>
                   <li>Social Media Marketing</li>
-                  <li>Food Photography</li>
-                  <li>Portrait Photography</li>
+                  <li>Photography</li>
                   <li>Blogging</li>
                   <li>Content Strategy</li>
                   <li>Copywriting</li>

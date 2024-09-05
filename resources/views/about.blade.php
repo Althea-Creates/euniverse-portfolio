@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>About</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>    
     
@@ -23,6 +24,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  
+    <style>
+      body,h1,h2,h3,h4,h5 {font-family: sans-serif}
+      </style>
   </head>
 <body>
   @include('partials.header')
@@ -55,31 +60,8 @@
         </div> {{--end of first row--}}
 
         <div class="row"> {{-- 2nd row --}}
-          <div class="col-md-4 mt-4 mb-1"> {{-- Left side: About cards - hardskills --}}
-            <h2 class="text-shadow">About</h2>
-            <div class="card shadow bg-about-card my-5 mx-0" style="max-width: 50rem;">
-              <div class="card-body">
-                <h5 class="card-title fw-bold"><i class="bi bi-gear-fill me-2"></i>Hard Skills</h5>
-                <p class="card-text ms-0 fs-5"> {{-- Content of card --}}
-                  <div class="row ms-0">
-                    <div class="col-md-6">
-                      <ul class="list-unstyled">
-                        <li>Microsoft Office</li>
-                        <li>Google</li>
-                        <li>Canva</li>
-                      </ul>
-                    </div>
-                    <div class="col-md-6">
-                      <ul class="list-unstyled">
-                        <li>Filmora</li>
-                        <li>Capcut</li>
-                        <li>Adobe Photoshop</li>
-                      </ul>
-                    </div>
-                  </div>
-                </p>
-              </div>
-            </div>
+          <div class="col-md-4 mt-4 mb-1"> {{-- Left side: About --}}
+            <h2 class="text-shadow">about</h2>
             <div class="card shadow bg-about-card my-2 mx-0" style="max-width: 50rem;"> {{--soft skills--}}
               <div class="card-body">
                 <h5 class="card-title fw-bold"><i class="bi bi-person-circle me-2"></i>Soft Skills</h5>
@@ -103,9 +85,10 @@
                 </p>
               </div>
             </div>
+            - education <br> - experience <br> - soft skills <br> pero hindi sila naka card
           </div> {{-- End of Left side: About cards --}}
           <div class="col-md-8 education-container"> {{-- Right side: Education --}}
-            <h2 class="text-shadow">Education</h2>
+            {{-- <h2 class="text-shadow">Education</h2>
               <div class="timeline"> 
                 <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type1">
                   <div class="timeline__event__icon ">
@@ -171,7 +154,35 @@
                     </div>
                   </div>
                 </div>
+              </div> --}}
+              <hr class="w3-opacity">
+              <h4 class="w3-padding-16">Technical Skills</h4>
+              <p class="w3-wide">Microsoft Office</p>
+              <div class="w3-white">
+                <div class="w3-container w3-padding-small w3-center w3-grey" style="width:95%">95%</div>
               </div>
+              <p class="w3-wide">Google Suites</p>
+              <div class="w3-white">
+                <div class="w3-container w3-padding-small w3-center w3-grey" style="width:85%">85%</div>
+              </div>
+              <p class="w3-wide">Canva</p>
+              <div class="w3-white">
+                <div class="w3-container w3-padding-small w3-center w3-grey" style="width:80%">80%</div>
+              </div>
+              <p class="w3-wide">Adobe Photoshop Express</p>
+              <div class="w3-white">
+                <div class="w3-container w3-padding-small w3-center w3-grey" style="width:80%">80%</div>
+              </div>
+              <p class="w3-wide">Filmora</p>
+              <div class="w3-white">
+                <div class="w3-container w3-padding-small w3-center w3-grey" style="width:80%">80%</div>
+              </div>
+              <p class="w3-wide">Capcut</p>
+              <div class="w3-white">
+                <div class="w3-container w3-padding-small w3-center w3-grey" style="width:80%">80%</div>
+              </div>
+              <p><button class="w3-button w3-light-grey w3-padding-large w3-margin-top w3-margin-bottom">Download Resume</button></p>
+              <hr class="w3-opacity">
           </div> {{-- End of right side column --}}
         </div> {{-- End of Combined row --}}
     </div> {{--end of card container--}}
