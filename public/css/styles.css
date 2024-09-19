@@ -2,13 +2,14 @@ html {
   font-size: 15px;
 }
 body {
-  background-color: #006989;
+  background-color: #006989 !important;
   background-repeat: no-repeat;
   font-family: "DM Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 100;
   font-style: normal;
   max-width: auto;
+  max-height: auto;
 } 
 a{
   text-decoration: none;
@@ -42,17 +43,17 @@ a{
     font-weight: 500;
     text-align: left;
   }
-  .btn-link:hover {
-    color: #01a7c2;
-  }
-  .btn-link {
+  .btn-link-custom {
     margin-top: 5%;
     margin-left: 30%;
     font-size: 5vh;
     font-weight: 400;
     text-align: left;
-    text-decoration: none;
-    color: #a3bac3;
+    color: black;
+    text-decoration: underline;
+  }
+  .btn-link-custom:hover {
+      color: black; 
   }
   .image-logo {
       width: 10%;
@@ -98,9 +99,50 @@ a{
       letter-spacing: 4vh;
   }
 }
-  
-  /*	general	*/
-  
-  section{
-      padding: 0 0 5% 0;
-  }
+
+   /* ABOUT PAGE */
+ .profile-image{
+  max-width: 100%;
+  max-height: 100%;
+  padding: 0%;
+}
+
+.banner-image{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.card-container{
+  padding: 5%;
+  max-width: 100%;
+  color: #eaebed;
+  font-family: sans-serif;
+}
+
+.card-name .card-body .card-text{
+  padding: 0%;
+  max-width: 100%;
+}
+
+.bg-about-card{
+  /* background-color: #A3BAC3 !important;  */
+  font-family: sans-serif;
+  margin: 5%;
+  background:  transparent !important;
+  border: 0 !important;
+}
+.text-muted-white {
+  color: white;
+  opacity: 0.6; 
+}
+.technicalSkills-container{
+  padding: 0%;
+}
+
+/* writings page */
+main{
+  margin-top: 0;
+  padding-top: 0;
+  padding-left: 6%;
+  padding-right: 6%;
+}

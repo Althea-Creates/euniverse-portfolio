@@ -34,7 +34,7 @@
                 <p>A Communication-student with proven leadership capabilities and creative skills 
                     shared through writing. A person who would persevere in sharing creative vision 
                     through available mediums, and openness to learning new skills in various pursuits.</p>
-                <a href="/about" class="btn-link text-decoration-underline">Get to know me</a>
+                <a href="/about" class="btn-link btn-link-custom">Get to know me</a>
             </div>
         </div>
         <div class="d-flex justify-content-left align-items-center mx-5">

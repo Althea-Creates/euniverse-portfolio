@@ -9,7 +9,7 @@ a{
     -webkit-box-shadow: 0 8px 48px 8px rgba(47, 91, 234, 0.175);
     box-shadow: 0 8px 48px 8px rgba(47, 91, 234, 0.175);
     background: linear-gradient(to bottom, #eaebed,#007090);
-    padding: 2%;
+    padding: 4%;
     padding-bottom: 0; 
     width: auto;
     height: 100%;
@@ -109,7 +109,7 @@ a{
 }
 .single-footer-widget .footer_menu li a {
     color: #006989;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
     display: block;
     font-size: 1rem;
     font-weight: 500;
@@ -144,6 +144,7 @@ a{
     -webkit-box-shadow: none;
     box-shadow: none;
     margin-right: 10px;
+    margin-bottom: 10px;
 }
 .footer_social_area a i {
     line-height: 36px;
