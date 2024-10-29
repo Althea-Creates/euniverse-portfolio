@@ -12,6 +12,11 @@
     <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" />
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+
     <link rel="icon" href="{{ asset('euniverse-logo-5.ico') }}" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
 
@@ -24,14 +29,14 @@
   @include('partials.header')
     <div class="card-container">
         <div class="row"> {{--first row--}}
-            <div class="col">
+            <div class="col" data-aos="fade-right">
               <img src="asset/pfp.png" alt="profile" class="profile-image rounded">
             </div>
-            <div class="col-md-8">
+            <div class="col-md-8" data-aos="fade-left">
                 <img src="asset/banner3.png" alt="banner name" class="banner-image rounded">
                 <div class="card-body">
                   {{-- <h5 class="card-title">Card title</h5> --}}
-                  <p class="card-text ms-2">
+                  <p class="card-text ms-2" data-aos="fade-up">
                     I am a broadcasting student who loves to discover
                     more of my creative skills. My enthusiasm for pop
                     culture, literature, and music is what influences my
@@ -39,7 +44,7 @@
                     am eager to discover more of what I can bring to
                     the table when it comes to being visionary. 
                   </p>
-                  <p class="card-text ms-2">
+                  <p class="card-text ms-2" data-aos="fade-up">
                     I am proficient in writing in both English and Filipino.
                     Apart from that, I have experience in photography
                     and video editing. I gained experience mainly from
@@ -54,21 +59,21 @@
           <div class="col-md-4 mt-4 mb-1"> {{-- Left side: About --}}
             <div class="card bg-about-card my-2 mx-0" style="max-width: 50rem;"> {{--soft skills--}}
               <div class="card-body">
-                <h4 class="card-title fw-bold text-white"><i class="bi bi-person-circle me-2"></i>Soft Skills</h4>
+                <h4 class="card-title fw-bold text-white" data-aos="fade-right"><i class="bi bi-person-circle me-2"></i>Soft Skills</h4>
                 <p class="card-text ms-0"> {{-- Content of card --}}
                   <div class="row ms-0 me-0 text-white">
-                    <div class="col-md-6">
+                    <div class="col-md-6" data-aos="fade-right">
                       <ul class="list-unstyled">
-                        <li>Organizational skills</li>
-                        <li>Attention to detail</li>
-                        <li>Collaboration</li>
+                        <li><i class="fa fa-check me-2"></i>Organized</li>
+                        <li><i class="fa fa-check me-2"></i>Attention to detail</li>
+                        <li><i class="fa fa-check me-2"></i>Collaboration</li>
                       </ul>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6" data-aos="fade-left">
                       <ul class="list-unstyled">
-                        <li>Adaptability</li>
-                        <li>Critical Thinking</li>
-                        <li>Work Ethic</li>
+                        <li><i class="fa fa-check me-2"></i>Adaptability</li>
+                        <li><i class="fa fa-check me-2"></i>Critical Thinking</li>
+                        <li><i class="fa fa-check me-2"></i>Work Ethic</li>
                       </ul>
                     </div>
                   </div>
@@ -77,14 +82,14 @@
             </div>
             <div class="card bg-about-card my-2 mx-0" style="max-width: 50rem;">
               <div class="card-body">
-                  <h4 class="card-title fw-bold text-white"><i class="bi bi-mortarboard me-2"></i>Education</h4>
+                  <h4 class="card-title fw-bold text-white" data-aos="fade-right"><i class="bi bi-mortarboard me-2"></i>Education</h4>
                   <p class="card-text ms-0">
                       <div class="row ms-0 me-0 text-white">
                           <div class="col-md-12">
                               <ul class="list-unstyled">
-                                <li class="mb-2"><strong>Bachelor of Arts in Broadcasting</strong><br>Polytechnic University of the Philippines<br><span class="text-muted-white">2023-PRESENT</span></li>
-                                <li class="mb-2"><strong>Bachelor of Arts in Communication</strong><br>University of Santo Tomas<br><span class="text-muted-white">2021-2022</span></li>
-                                <li class="mb-2"><strong>Senior High School (HUMSS)</strong><br>University of Santo Tomas<br><span class="text-muted-white">2019-2021</span></li>
+                                <li class="mb-2" data-aos="fade-left"><strong>Bachelor of Arts in Broadcasting</strong><br>Polytechnic University of the Philippines<br><span class="text-muted-white">2023-PRESENT</span></li>
+                                <li class="mb-2" data-aos="fade-left"><strong>Bachelor of Arts in Communication</strong><br>University of Santo Tomas<br><span class="text-muted-white">2021-2022</span></li>
+                                <li class="mb-2" data-aos="fade-left"><strong>Senior High School (HUMSS)</strong><br>University of Santo Tomas<br><span class="text-muted-white">2019-2021</span></li>
                               </ul>
                           </div>
                       </div>
@@ -95,51 +100,52 @@
           <div class="col-md-8 technicalSkills-container"> {{-- Right side: tech skills --}}
             <hr class="my-1 ms-4" style="border: none; border-top: 2px solid #A3BAC3;">            
             <div class="card-container ms-2">
-              <h4 class="mb-4 card-title fw-bold"><i class="bi bi-laptop me-2"></i>Technical Skills</h4>
+              <h4 class="mb-4 card-title fw-bold" data-aos="fade-right"><i class="bi bi-laptop me-2"></i>Technical Skills</h4>
               <div class="mb-3">
-                <p class="fw-bold text-end">Microsoft Office</p>
-                <div class="progress" style="height: 20px;">
+                <p class="fw-bold text-end" data-aos="fade-left">Microsoft Office</p>
+                <div class="progress" style="height: 20px;" data-aos="fade-in">
                   <div class="progress-bar bg-primary" style="width: 95%;" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
                 </div>
               </div>
             
               <div class="mb-3">
-                <p class="fw-bold text-end">Google Suites</p>
-                <div class="progress" style="height: 20px;">
+                <p class="fw-bold text-end" data-aos="fade-left">Google Suites</p>
+                <div class="progress" style="height: 20px;" data-aos="fade-in">
                   <div class="progress-bar bg-primary" style="width: 85%;" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
                 </div>
               </div>
             
               <div class="mb-3">
-                <p class="fw-bold text-end">Canva</p>
-                <div class="progress" style="height: 20px;">
+                <p class="fw-bold text-end" data-aos="fade-left">Canva</p>
+                <div class="progress" style="height: 20px;" data-aos="fade-in">
                   <div class="progress-bar bg-primary" style="width: 80%;" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
                 </div>
               </div>
             
               <div class="mb-3">
-                <p class="fw-bold text-end">Adobe Photoshop Express</p>
-                <div class="progress" style="height: 20px;">
+                <p class="fw-bold text-end" data-aos="fade-left">Adobe Photoshop Express</p>
+                <div class="progress" style="height: 20px;" data-aos="fade-in">
                   <div class="progress-bar bg-primary" style="width: 80%;" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
                 </div>
               </div>
             
               <div class="mb-3">
-                <p class="fw-bold text-end">Filmora</p>
-                <div class="progress" style="height: 20px;">
+                <p class="fw-bold text-end" data-aos="fade-left">Filmora</p>
+                <div class="progress" style="height: 20px;" data-aos="fade-in">
                   <div class="progress-bar bg-primary" style="width: 80%;" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
                 </div>
               </div>
             
               <div class="mb-4">
-                <p class="fw-bold text-end">Capcut</p>
-                <div class="progress" style="height: 20px;">
+                <p class="fw-bold text-end" data-aos="fade-left">Capcut</p>
+                <div class="progress" style="height: 20px;" data-aos="fade-in">
                   <div class="progress-bar bg-primary" style="width: 80%;" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
                 </div>
               </div>   
 
-              <div class="text-end mt-4">
-                <a href="{{ asset('asset/DE-LA-CRUZ-PORTFOLIO.pdf') }}" class="btn btn-light btn-lg">Download Resume</a>
+              <div class="text-end mt-4" data-aos="fade-in">
+                {{-- <a href="{{ asset('asset/DE-LA-CRUZ-PORTFOLIO.pdf') }}" class="btn btn-light btn-lg">Download Resume</a> --}}
+                <a href="{{ asset('asset/DE-LA-CRUZ-PORTFOLIO.pdf') }}" class="btn resume-btn shadow">Download Resume</a>
               </div>
             </div>
           </div> {{-- End of right side column --}}
@@ -147,4 +153,9 @@
     </div> {{--end of card container--}}
     @include('partials.footer')
 </body>
+<script>
+  AOS.init({
+      duration: 800, // Animation duration
+  });
+</script>
 </html>

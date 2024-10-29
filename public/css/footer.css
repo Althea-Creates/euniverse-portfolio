@@ -89,7 +89,7 @@ a{
 .footer_area .row .col-xl-9,
 .footer_area .row .col-xl-auto {
     padding-right: 25px;
-    padding-left: 50px;
+    /* padding-left: 50px; */
 }
 
 .single-footer-widget {

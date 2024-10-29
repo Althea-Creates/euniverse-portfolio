@@ -12,6 +12,11 @@
     <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" />
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+
     <link rel="icon" href="{{ asset('euniverse-logo-5.ico') }}" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,18 +33,18 @@
 
     <!-- Content Section -->
     <div class="container text-center text-white my-5">
-        <span class="display-1 text-shadow ms-0">EUNIVERSE</span>
+        <span class="display-1 text-shadow ms-0" data-aos="fade-in">EUNIVERSE</span>
         <div class="row mt-4">
-            <div class="col-lg-12 col-md-12 col-sm-12 mx-auto">
+            <div class="col-lg-12 col-md-12 col-sm-12 mx-auto" data-aos="fade-up">
                 <p>A Communication-student with proven leadership capabilities and creative skills 
                     shared through writing. A person who would persevere in sharing creative vision 
                     through available mediums, and openness to learning new skills in various pursuits.</p>
-                <a href="/about" class="btn-link btn-link-custom">Get to know me</a>
+                <a href="/about" class="btn-link-custom" data-aos="fade-in">Get to know me</a>
             </div>
         </div>
         <div class="d-flex justify-content-left align-items-center mx-5">
             <img src="asset/euniverselogo5.png" id="linkable-logo" class="image-logo rounded-circle" alt="logo">
-            <div class="caption-text ms-2">
+            <div class="caption-text ms-2" data-aos="fade-in">
                 <caption><i>designed & created by ayet</i></caption>
             </div>
         </div>
@@ -52,4 +57,9 @@
         });
     </script>
 </body>
+<script>
+    AOS.init({
+        duration: 800, // Animation duration
+    });
+</script>
 </html>

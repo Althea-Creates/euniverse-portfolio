@@ -1,14 +1,20 @@
 
  /* PROJECTS PAGE */
- *{
-    padding:0;
-    margin:0;
+ * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-section{
+section {
+    display: flex; 
+    flex-wrap: wrap;
     padding-bottom: 50px;
     padding-left: 0;
     margin-left: 0;
+    max-width: 100%;
+    overflow-x: hidden;
 }
+
 /*	gallery */
 .gallery-title{
     color: white;
@@ -33,10 +39,12 @@ section{
     background-color:#01a7c2;
     outline:none;
 }
-.gallery_product{
-    margin: 0px;
-    padding:0;
-    position:relative;
+.gallery_product {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: block;
+    overflow: hidden;
 }
 .gallery_product img,
 .gallery_product video {
@@ -44,7 +52,8 @@ section{
   height: 300px;
   display: block;
   object-fit: cover;
-  padding: 0;
+  padding-left: 0;
+  margin-left: 0;
 }
 .gallery_product .img-info{
     position: absolute;
@@ -52,8 +61,7 @@ section{
     left: 0;
     right: 0;
     bottom: 0;
-    padding: 20px;
-    overflow:hidden;
+    width: auto;
     color:#fff;
     top:0;
     display:none;
@@ -66,4 +74,15 @@ section{
    -webkit-transition: 2s;
     transition: 2s;
 }
+
+@media (max-width: 768px) {
+    .gallery_product {
+        width: 100%;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
 /*	end gallery */

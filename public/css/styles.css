@@ -49,11 +49,11 @@ a{
     font-size: 5vh;
     font-weight: 400;
     text-align: left;
-    color: black;
+    color: #a3bac3;
     text-decoration: underline;
   }
   .btn-link-custom:hover {
-      color: black; 
+      color: #007090; 
   }
   .image-logo {
       width: 10%;
@@ -85,7 +85,7 @@ a{
   p {
       font-size: 1rem;
   }
-  .btn-link {
+  .btn-link-custom {
       font-size: 1.25rem;
   }
   .image-logo {
@@ -119,9 +119,17 @@ a{
   font-family: sans-serif;
 }
 
-.card-name .card-body .card-text{
+.card-name .card-body .card-text .list-unstyled{
   padding: 0%;
   max-width: 100%;
+  padding: 0.5rem; 
+  margin: 0; 
+}
+
+.card-container p, .card-container li {
+  /* font-size: 1rem;  para maging same text lahat */
+  line-height: 1.5; 
+  padding: 0; 
 }
 
 .bg-about-card{
@@ -137,6 +145,28 @@ a{
 }
 .technicalSkills-container{
   padding: 0%;
+}
+.resume-btn {
+  display: inline-block;
+  background-color: #007090 !important; 
+  color: white !important;
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-family: sans-serif;
+  padding: 12px 24px;
+  border-radius: 8px; 
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.resume-btn:hover {
+  color: #006989 !important;
+  background-color: #a3bac3 !important; 
+  transform: scale(1.05); 
+}
+
+.resume-btn:active {
+  transform: scale(0.98); 
 }
 
 /* writings page */
